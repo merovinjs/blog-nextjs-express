@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main className={styles.main}>
-      <h1>Hello dev Branch pull alma</h1>
+      <h1>kodu güncelledim</h1>
     </main>
   );
 }
