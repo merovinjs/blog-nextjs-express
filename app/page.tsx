@@ -5,8 +5,13 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <h1>kodu dev1 den gelen</h1>
-    </main>
+    <div className={styles.flexContainer}>
+      <div>kutu1</div>
+      <div>kutu1</div>
+      <div>kutu1</div>
+      <div>
+        <p>Lorem, ipsum dolor.</p>
+      </div>
+    </div>
   );
 }
