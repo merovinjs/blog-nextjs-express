@@ -1,8 +1,0 @@
-.flexContainer {
-  display: flex;
-  background-color: greenyellow;
-}
-.flexContainer > div {
-  width: 85px;
-  height: 85px;
-}
