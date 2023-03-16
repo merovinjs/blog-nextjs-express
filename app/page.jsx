@@ -8,7 +8,9 @@ export default async function Home() {
     cache: "no-store",
   });
   const res = await data.json();
-  console.log(res);
+  if (data.ok) {
+    console.log(res);
+  }
   return (
     <div>
       <h1>selam</h1>
