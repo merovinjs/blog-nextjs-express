@@ -1,10 +1,13 @@
 "use client";
 import React, { useState } from "react";
+import { useRouter } from "next/navigation";
+import "../../styles/globals.css";
 
 const Page = () => {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
   const [hata, setHata] = useState(null);
+  const router = useRouter();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -32,13 +35,16 @@ const Page = () => {
       setName("");
       setDescription("");
       console.log("Yeni not eklendi", json);
+      router.push("/");
     }
   };
 
   return (
     <form onSubmit={handleSubmit}>
       <div>
-        <label htmlFor="text">name</label>
+        <label htmlFor="text" style={{ color: "red" }}>
+          name
+        </label>
         <input
           type="text"
           id="text"
@@ -47,7 +53,9 @@ const Page = () => {
         />
       </div>
       <div>
-        <label htmlFor="text">Açıklma</label>
+        <label htmlFor="text" style={{ color: "red" }}>
+          Açıklma
+        </label>
         <input
           type="text"
           id="text"
