@@ -1,11 +1,12 @@
 import "../styles/globals.css";
 import Footer from "../components/Foooter/Footer";
-import Header from "../components/header/header";
+
+import Headerr from "../components/Header/Headerr";
 export default function RootLayout({ children }) {
   return (
     <html lang="tr">
       <body>
-        <Header />
+        <Headerr />
         <main>{children}</main>
         <Footer />
       </body>
