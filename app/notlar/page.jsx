@@ -1,4 +1,5 @@
 import React from "react";
+import Note from "./note";
 
 const Notlar = async () => {
   const data = await fetch(`${process.env.API_URI}/getPosts`, {
@@ -8,13 +9,12 @@ const Notlar = async () => {
   if (data.ok) {
     console.log(res);
   }
+
   return (
     <div style={{ color: "white" }}>
-      {res.getpost.map((ad) => (
-        <div key={ad._id}>
-          <h2>{ad.name}</h2>
-        </div>
-      ))}
+      {res.getpost.map((note) => {
+        return <Note note={note} key={note._id} />;
+      })}
     </div>
   );
 };
