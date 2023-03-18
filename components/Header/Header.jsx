@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import styles from "./styles.module.css";
-const Headerr = () => {
+const Header = () => {
   return (
     <header className={styles.header}>
       <Link href="/" className={styles.logo}>
@@ -26,4 +26,4 @@ const Headerr = () => {
   );
 };
 
-export default Headerr;
+export default Header;
