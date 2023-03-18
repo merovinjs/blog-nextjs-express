@@ -8,12 +8,15 @@ const Header = () => {
         <span>BLOG</span>
       </Link>
       <nav>
+        <Link href="/notlar" className={styles.header}>
+          notlar
+        </Link>
         <Link
           href="https://github.com/Proprogam
         "
           target="_blank"
         >
-          About
+          Aboutt
         </Link>
         <Link href="/notekle" className={styles.header}>
           blog ekle
