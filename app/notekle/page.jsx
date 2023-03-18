@@ -6,7 +6,7 @@ import "../../styles/globals.css";
 const Page = () => {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
-  const [hata, setHata] = useState(null);
+
   const router = useRouter();
 
   const handleSubmit = async (e) => {
@@ -22,6 +22,7 @@ const Page = () => {
         headers: {
           "Content-Type": "application/json",
         },
+        cache: "no-store",
       }
     );
 
@@ -31,11 +32,11 @@ const Page = () => {
       setHata(json.hata);
     }
     if (response.ok) {
-      setHata(null);
       setName("");
       setDescription("");
       console.log("Yeni not eklendi", json);
-      router.push("/");
+      router.push("/notlar");
+      router.refresh("/notlar");
     }
   };
 
@@ -64,7 +65,6 @@ const Page = () => {
         />
       </div>
       <button type="submit">Add</button>
-      {hata && <div>{hata}</div>}
     </form>
   );
 };
