@@ -1,4 +1,6 @@
 .header {
+  height: 8rem;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -7,9 +9,12 @@
 .logo {
   font-size: 24px;
   font-weight: 700;
-  color: var(--white);
 }
 .header nav {
   display: flex;
+  align-items: center;
   gap: 2rem;
+}
+.kesfet {
+  color: red;
 }
