@@ -1,0 +1,28 @@
+#container {
+  text-align: center;
+  max-width: 75ch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+}
+.heroImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heroImage img {
+  width: fit-content;
+  height: fit-content;
+  object-fit: contain;
+}
+#container h1 {
+  font-size: 2rem;
+  color: var(--selective-yellow);
+}
+#container p {
+  color: var(--orange-web);
+}
