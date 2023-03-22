@@ -1,3 +1,28 @@
-.feature {
-  color: aqua;
+#features {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  color: var(--sinopia);
+}
+.featurecard {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 35%;
+  min-width: 310px;
+}
+.featurecard h3 {
+  font-weight: 700;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
 }
