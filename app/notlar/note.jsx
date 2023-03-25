@@ -4,12 +4,9 @@ import { useRouter } from "next/navigation";
 const Note = ({ note }) => {
   const router = useRouter();
   const handledelete = async () => {
-    const response = await fetch(
-      `https://nodejs-api-1yrr.onrender.com/deletePost/` + note._id,
-      {
-        method: "DELETE",
-      }
-    );
+    await fetch(`https://nodejs-api-1yrr.onrender.com/deletePost/` + note._id, {
+      method: "DELETE",
+    });
     router.refresh("/notlar");
   };
 

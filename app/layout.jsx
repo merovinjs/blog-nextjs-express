@@ -8,12 +8,10 @@ import Header from "../components/Header/Header";
 export default function RootLayout({ children }) {
   return (
     <html lang="tr">
-      <body>
-        <div className={styles.container}>
-          <Header />
-          <main>{children}</main>
-        </div>
-        <Footer />
+      <body className={styles.container}>
+        <Header className={styles.header} />
+        <main className={styles.main}>{children}</main>
+        <Footer className={styles.footer} />
       </body>
     </html>
   );
