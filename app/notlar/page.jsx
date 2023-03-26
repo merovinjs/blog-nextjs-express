@@ -1,5 +1,5 @@
 import React from "react";
-import Note from "../note/page";
+import Note from "../note/note";
 
 import styles from "./styles.module.css";
 const Notlar = async () => {
