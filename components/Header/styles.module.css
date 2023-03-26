@@ -2,7 +2,8 @@
   height: 8rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 2rem;
   color: var(--orange-web);
 }
 

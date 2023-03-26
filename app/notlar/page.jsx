@@ -1,5 +1,7 @@
 import React from "react";
-import Note from "./note";
+import Note from "../note/page";
+
+import styles from "./page.module.css";
 
 const Notlar = async () => {
   const data = await fetch(`${process.env.API_URI}/getPosts`, {
@@ -11,7 +13,7 @@ const Notlar = async () => {
   }
 
   return (
-    <div style={{ color: "white" }}>
+    <div className={styles.page}>
       {res.getpost.map((note) => {
         return <Note note={note} key={note._id} />;
       })}

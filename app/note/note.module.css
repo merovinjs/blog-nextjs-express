@@ -1,0 +1,17 @@
+.note {
+  width: 250px;
+  height: 350px;
+  background-color: chocolate;
+  margin-bottom: 15px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: x-large;
+  margin: 25px;
+  border-radius: 8px;
+}
+.span {
+  cursor: pointer;
+
+  color: rgb(59, 95, 48);
+}
