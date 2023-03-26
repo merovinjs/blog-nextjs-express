@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { useRouter } from "next/navigation";
-import styles from "./note.module.css";
+import styles from "./styles.module.css";
 import { MdDeleteSweep } from "react-icons/md";
 
 const Note = ({ note }) => {
