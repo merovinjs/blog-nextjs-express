@@ -2,7 +2,6 @@ import React from "react";
 import Note from "../note/page";
 
 import styles from "./page.module.css";
-
 const Notlar = async () => {
   const data = await fetch(`${process.env.API_URI}/getPosts`, {
     cache: "no-store",
