@@ -105,3 +105,6 @@ p {
 body {
   background-color: var(--rich-black);
 }
+div {
+  color: beige;
+}
