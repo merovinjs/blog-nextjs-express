@@ -4,7 +4,7 @@ import Note from "../note/note";
 import styles from "./styles.module.css";
 const Notlar = async () => {
   const data = await fetch(`${process.env.API_URI}/getPosts`, {
-    cache: "no-store",
+    cache: "no-cache",
   });
   const res = await data.json();
   if (data.ok) {

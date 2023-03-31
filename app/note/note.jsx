@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import styles from "./styles.module.css";
 import { MdDeleteSweep } from "react-icons/md";
 import Link from "next/link";
+import Image from "next/image";
 
 const Note = ({ note }) => {
   const router = useRouter();
@@ -13,12 +14,28 @@ const Note = ({ note }) => {
     });
     router.refresh("/notlar");
   };
+  const RandomNumber = () => {
+    return Math.floor(Math.random() * 10);
+  };
+  let Random = RandomNumber();
 
   return (
-    <div className={styles.note}>
-      <Link href={`${note._id}`}>git</Link>
-      <h3 key={note._id}>{note.name}</h3>
-      <MdDeleteSweep size={40} className={styles.span} onClick={handledelete} />
+    <div className={styles.card}>
+      <div className={styles.cardImage}>
+        <Image
+          src={`https://picsum.photos/200/300?random=${Random}`}
+          alt="Blog Card Image"
+          fill
+        />
+      </div>
+      <div className={styles.cardBody}>
+        <p key={note._id}>{note.name}</p>
+        <Link href={`${note._id}`}>yazının devamı...</Link>
+
+        <span className={styles.span} onClick={handledelete}>
+          Sil <MdDeleteSweep size={20} />
+        </span>
+      </div>
     </div>
   );
 };

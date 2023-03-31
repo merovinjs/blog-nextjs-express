@@ -1,17 +1,43 @@
-.note {
-  width: 250px;
-  height: 350px;
-  background-color: chocolate;
-  margin-bottom: 15px;
+.card {
+  display: flex;
   align-items: center;
   justify-content: center;
-  display: flex;
-  font-size: x-large;
-  margin: 25px;
+  width: 90%;
+}
+
+.cardImage {
+  flex-shrink: 0;
+  position: relative;
+  height: 96px;
+  width: 96px;
+}
+
+.card img {
   border-radius: 8px;
+  object-fit: cover;
+}
+
+.cardBody {
+  margin-left: 16px;
+}
+
+.cardBody p {
+  margin-top: 4px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.cardBody a {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 18px;
 }
 .span {
+  display: flex;
+  flex-direction: row;
   cursor: pointer;
-
-  color: rgb(59, 95, 48);
 }
