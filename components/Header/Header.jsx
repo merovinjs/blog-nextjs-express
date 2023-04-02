@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import logo from "../../public/oldbee2.png";
 import styles from "./styles.module.css";
+import { BiLogIn } from "react-icons/bi";
 const Header = () => {
   return (
     <header className={styles.header}>
@@ -23,6 +24,9 @@ const Header = () => {
         </Link>
         <Link href="/notekle" className={styles.kesfet}>
           Keşfet
+        </Link>
+        <Link href="/auth" className={styles.header}>
+          <BiLogIn color="red" size="2em" />
         </Link>
       </nav>
     </header>
