@@ -19,6 +19,9 @@
   flex-direction: column;
   width: 35%;
   min-width: 310px;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #060d136c;
 }
 .featurecard h3 {
   font-weight: 700;
