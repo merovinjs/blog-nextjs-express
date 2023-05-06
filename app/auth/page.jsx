@@ -33,7 +33,7 @@ const Page = () => {
               placeholder=" "
             />
             <div className={styles.cut}></div>
-            <label for="username" className={styles.placeholder}>
+            <label htmlFor="username" className={styles.placeholder}>
               Kullanıcı Adı
             </label>
           </div>
@@ -64,7 +64,7 @@ const Page = () => {
             placeholder=" "
           />
           <div className={styles.cut}></div>
-          <label for="password" className={styles.placeholder}>
+          <label htmlFor="password" className={styles.placeholder}>
             Parola
           </label>
         </div>
