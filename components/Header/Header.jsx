@@ -1,21 +1,25 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import logo from "../../public/oldbee2.png";
 import styles from "./styles.module.css";
 import { BiLogIn } from "react-icons/bi";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { useRef } from "react";
 const Header = () => {
+  const navRef = useRef();
+  const showNavbar = () => {
+    navRef.current.classList.toggle(styles.responsive_nav);
+  };
   return (
     <header className={styles.header}>
       <Link href="/" className={styles.logo}>
-        <Image className={styles.logo} src={logo} alt="logo" width={85} />
+        <Image src={logo} alt="logo" width={85} />
       </Link>
-      <nav>
-        <Link href="/notlar" className={styles.header}>
-          Bloglar
-        </Link>
+      <nav ref={navRef}>
+        <Link href="/notlar">Bloglar</Link>
         <Link
-          className={styles.header}
           href="https://github.com/oldbeedev
         "
           target="_blank"
@@ -25,10 +29,19 @@ const Header = () => {
         <Link href="/notekle" className={styles.kesfet}>
           Keşfet
         </Link>
-        <Link href="/auth" className={styles.header}>
+        <Link href="/auth">
           <BiLogIn color="red" size="2em" />
         </Link>
+        <button
+          className={styles.close_btn + " " + styles.nav_btn}
+          onClick={showNavbar}
+        >
+          <FaTimes />
+        </button>
       </nav>
+      <button className={styles.nav_btn} onClick={showNavbar}>
+        <FaBars />
+      </button>
     </header>
   );
 };
