@@ -5,7 +5,7 @@
   justify-content: space-between;
   margin: 1rem 2.5rem;
   gap: 1rem;
-  background-color: #1c3241;
+  background-color: var(--mozillablack);
   color: var(--orange-web);
 }
 
@@ -52,7 +52,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 1.5rem;
-    background-color: var(--rich-black);
+    background-color: var(--mozillablack);
     transition: 1s;
     transform: translateY(100vh);
   }

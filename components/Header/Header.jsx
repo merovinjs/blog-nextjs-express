@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import logo from "../../public/oldbee2.png";
+import logo from "../../public/logo.svg";
 import styles from "./styles.module.css";
 import { BiLogIn } from "react-icons/bi";
 import { FaBars, FaTimes } from "react-icons/fa";

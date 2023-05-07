@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./styles.module.css";
-import logo from "../../public/oldbee2.png";
+import logo from "../../public/logo.svg";
 import Image from "next/image";
 import adress from "../../public/icon-location.svg";
 import Link from "next/link";

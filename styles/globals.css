@@ -15,6 +15,15 @@
   --orange-web: #faa307ff;
   --selective-yellow: #ffba08ff;
 }
+:root {
+  --mozillablue: #8cb4ff;
+  --mozillagray: #343434;
+  --mozillalightgray: #858585;
+  --mozillablack: #1b1b1b;
+  --mozillagrenn: #06bd5c;
+  --mozillared: #ff707f;
+  --mozillawhite: #ffffff;
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
 
@@ -25,6 +34,8 @@
 }
 html,
 body {
+  background-color: var(--mozillablack);
+  color: var(--mozillawhite);
   font-size: 14px;
   line-height: 1.5;
   font-family: "Open Sans", sans-serif;
