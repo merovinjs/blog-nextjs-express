@@ -9,27 +9,31 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { useRef } from "react";
 const Header = () => {
   const navRef = useRef();
+
   const showNavbar = () => {
     navRef.current.classList.toggle(styles.responsive_nav);
   };
   return (
     <header className={styles.header}>
-      <Link href="/" className={styles.logo}>
+      <Link onClick={showNavbar} href="/" className={styles.logo}>
         <Image src={logo} alt="logo" width={85} />
       </Link>
       <nav ref={navRef}>
-        <Link href="/notlar">Bloglar</Link>
+        <Link onClick={showNavbar} href="/notlar">
+          Bloglar
+        </Link>
         <Link
+          onClick={showNavbar}
           href="https://github.com/oldbeedev
         "
           target="_blank"
         >
           Hakkımda
         </Link>
-        <Link href="/notekle" className={styles.kesfet}>
+        <Link onClick={showNavbar} href="/notekle" className={styles.kesfet}>
           Keşfet
         </Link>
-        <Link href="/auth">
+        <Link onClick={showNavbar} href="/auth">
           <BiLogIn color="red" size="2em" />
         </Link>
         <button
