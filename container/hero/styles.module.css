@@ -1,25 +1,26 @@
 #container {
-  margin: 4rem;
+  margin: 1rem;
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: #060d136c;
+  background-color: #13212e;
   flex-wrap: wrap;
   padding: 2rem;
   border-radius: 10px;
 }
 .heroImage {
+  width: 100%;
+  max-width: 450px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30%;
-  min-width: 310px;
-  opacity: 59%;
 }
 .heroImage img {
   width: fit-content;
   height: fit-content;
+  border-radius: 15px;
   object-fit: contain;
 }
 #container h1 {

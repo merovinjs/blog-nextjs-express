@@ -15,7 +15,7 @@ const Header = () => {
   };
   return (
     <header className={styles.header}>
-      <Link onClick={showNavbar} href="/" className={styles.logo}>
+      <Link href="/" className={styles.logo}>
         <Image src={logo} alt="logo" width={85} />
       </Link>
       <nav ref={navRef}>
