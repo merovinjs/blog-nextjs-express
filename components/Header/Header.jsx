@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <Link href="/" className={styles.logo}>
-        <Image src={logo} alt="logo" width={85} />
+        <Image src={logo} alt="oldbee.vercel.app" width={85} />
       </Link>
       <nav ref={navRef}>
         <Link onClick={showNavbar} href="/notlar">
