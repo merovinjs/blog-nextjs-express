@@ -34,7 +34,7 @@
 }
 html,
 body {
-  background-color: var(--mozillablack);
+  background-color: rgba(0, 65, 85, 0.692);
   color: var(--mozillawhite);
   font-size: 14px;
   line-height: 1.5;
@@ -114,7 +114,7 @@ p {
   color: var(--orange-web);
 }
 body {
-  background-color: var(--rich-black);
+  background-color: transparent;
 }
 div {
   color: beige;

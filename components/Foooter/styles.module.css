@@ -3,22 +3,52 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  background-color: var(--mozillablack);
+  background-color: #003140;
   color: azure;
   gap: 1rem;
   flex-wrap: wrap;
   width: 100%;
+  flex-wrap: nowrap;
 }
 .adress {
+  width: 100%;
+  padding: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
   max-width: 300px;
+  background-color: rgba(0, 65, 85, 0.692);
+  height: 100%;
+  color: azure;
+}
+.adress p {
+  background-color: #003140;
+  padding: 18px 12px;
+  text-align: center;
+  border-radius: 8px;
+  color: azure;
 }
 .contact {
+  background-color: rgba(0, 65, 85, 0.692);
+  height: 100%;
   display: flex;
+  padding: 12px;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
+  color: azure;
+  width: 30%;
+}
+.contact a {
+  background-color: #003140;
+  width: 50%;
+  padding: 18px 12px;
+  border-radius: 8px;
+  text-align: center;
+  color: azure;
+  font-weight: 700;
 }
 .logo {
   min-width: 65px;

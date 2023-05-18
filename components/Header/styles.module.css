@@ -4,9 +4,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 1rem 2.5rem;
+  padding: 1rem 2.5rem;
   gap: 1rem;
-  background-color: var(--mozillablack);
+  background-color: rgba(0, 65, 85, 0.692);
   color: var(--orange-web);
 }
 
