@@ -1,18 +1,14 @@
 #container {
-  margin: 1rem;
-  padding: 0;
+  padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   background-color: #003140;
   flex-wrap: wrap;
-  padding: 2rem;
-  border-radius: 10px;
 }
 .heroImage {
   width: 100%;
   max-width: 450px;
-
   display: flex;
   align-items: center;
   justify-content: center;

@@ -24,14 +24,14 @@ const Footer = () => {
         </p>
       </div>
       <div className={styles.contact}>
-        <Link href="/">anasayfa</Link>
+        <Link href="/">Anasayfa</Link>
         <Link
           href="https://github.com/oldbeedev
         "
         >
-          hakkımda
+          Hakkımda
         </Link>
-        <Link href="/notlar">bloglar</Link>
+        <Link href="/notlar">Bloglar</Link>
       </div>
     </footer>
   );
