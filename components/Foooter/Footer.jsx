@@ -7,7 +7,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <div>
+      <div className={styles.logoFooter}>
         <Image
           className={styles.logo}
           height={116}
@@ -19,8 +19,14 @@ const Footer = () => {
       <div className={styles.adress}>
         <Image src={adress} alt="adress" />
         <p>
+          <b>
+            <i>Adresimiz: </i>
+          </b>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius facilis
-          dolore doloremque velit.
+          dolore doloremque velit. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Tenetur atque, delectus accusantium natus quaerat
+          praesentium unde accusamus facilis quod ratione pariatur. Libero
+          similique deleniti quas illum explicabo doloremque quam
         </p>
       </div>
       <div className={styles.contact}>

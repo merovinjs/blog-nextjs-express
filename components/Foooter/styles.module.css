@@ -1,13 +1,13 @@
 .footer {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
   background-color: #003140;
   color: azure;
   gap: 1rem;
-  flex-wrap: wrap;
   width: 100%;
+  max-height: min-content;
   flex-wrap: nowrap;
 }
 .adress {
@@ -17,7 +17,7 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  max-width: 300px;
+
   background-color: rgba(0, 65, 85, 0.692);
   height: 100%;
   color: azure;
@@ -30,6 +30,10 @@
   color: azure;
 }
 .contact {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: large;
+  font-weight: 900;
+  letter-spacing: 0.4rem;
   background-color: rgba(0, 65, 85, 0.692);
   height: 100%;
   display: flex;
@@ -39,11 +43,11 @@
   justify-content: center;
   flex-direction: column;
   color: azure;
-  width: 30%;
+  width: 100%;
 }
 .contact a {
   background-color: #003140;
-  width: 50%;
+  width: 100%;
   padding: 18px 12px;
   border-radius: 8px;
   text-align: center;
@@ -52,4 +56,19 @@
 }
 .logo {
   min-width: 65px;
+}
+.logoFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 600px) {
+  .footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .logoFooter {
+    display: none;
+  }
 }
